@@ -191,16 +191,10 @@ namespace HeistPart2
                 {
                     if (userCrewInput == Member.Index)
                     {
-                        try
-                        {
-                            crew.Add(Member);
-                            Console.WriteLine("Add another Crew Member enter 0 when finished adding");
-                        }
-                        catch (FormatException)
-                        {
-                            Console.WriteLine("Thats not a number try again dummy!");
-                        }
+                        crew.Add(Member);
+                        Console.WriteLine("Add another Crew Member enter 0 when finished adding");
                     }
+                    // Console.WriteLine("Thats not a number try again dummy!");
                 }
 
             } while (userCrewInput != 0);
