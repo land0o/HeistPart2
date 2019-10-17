@@ -1,0 +1,15 @@
+using System;
+
+namespace HeistPart2
+{
+    public interface IRobber
+    {
+        string Name { get; set; }
+        int SkillLevel { get; set; }
+        int PercentageCut { get; set; }
+        string Type { get; set; }
+        int Index { get; set; }
+
+        void PerformSkill(Bank bank);
+    }
+}
